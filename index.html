@@ -4,6 +4,300 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diego Rodrigues Marques | CV</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="cv">
+      <header class="cv__header">
+        <h1 class="cv__name">Diego Rodrigues Marques</h1>
+        <div class="cv__contact">
+          <span class="cv__contact-item"
+            >Brazilian, Florianópolis - Santa Catarina - Brazil</span
+          >
+          <span class="cv__contact-item"
+            >E-mail:
+            <a href="mailto:diegobattistella94@gmail.com"
+              >diegobattistella94@gmail.com</a
+            ></span
+          >
+          <span class="cv__contact-item"
+            >LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/diego-rodrigues-9b99228a"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://www.linkedin.com/in/diego-rodrigues-9b99228a</a
+            ></span
+          >
+          <span class="cv__contact-item"
+            >GitHub:
+            <a
+              href="https://github.com/dihhrm"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://github.com/dihhrm</a
+            ></span
+          >
+        </div>
+      </header>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Professional Summary</h2>
+        <p class="cv__paragraph">
+          Full-stack engineer with 10+ years delivering production systems in
+          financial services, with hands-on ownership of architecture migrations,
+          security hardening, and observability across React, Vue.js, TypeScript,
+          Rails, and Python stacks. Increasingly leading technical initiatives
+          across cross-functional teams.
+        </p>
+      </section>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Technical Skills</h2>
+        <dl class="cv__skills">
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Languages</dt>
+            <dd class="cv__skills-def">
+              Ruby, Python, JavaScript, TypeScript, Golang, Java, HTML, CSS
+            </dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Frameworks</dt>
+            <dd class="cv__skills-def">
+              Vue.js, React, Next.js, Remix, Django, Rails, Spring
+            </dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Databases</dt>
+            <dd class="cv__skills-def">PostgreSQL, MySQL, MongoDB</dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Tools</dt>
+            <dd class="cv__skills-def">
+              Docker, Git, Redis, AWS (EC2, S3), Cypress, Kafka, OpenTelemetry
+              (Coralogix), Apereo CAS, GraphQL, Redux, Storybook
+            </dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Spoken</dt>
+            <dd class="cv__skills-def">
+              English — B2 Upper-Intermediate &nbsp;·&nbsp; Portuguese — Native
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Professional Experience</h2>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Full-Stack Developer</h3>
+          <p class="cv__job-meta">
+            VERT Capital | Financial Services Company | May 2021 – Present
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Led migration of a monolithic Django/Vue.js application to an
+              independent Vue.js SPA, reducing deployment time by over 40% and
+              improving maintainability.
+            </li>
+            <li class="cv__list-item">
+              Hardened authentication by migrating from browser-accessible
+              tokens to HttpOnly cookie-based sessions with CAS SSO integration,
+              reducing client-side token exposure.
+            </li>
+            <li class="cv__list-item">
+              Built a Design System with Storybook in partnership with UX,
+              improving component reuse and streamlining the
+              design-to-development workflow.
+            </li>
+            <li class="cv__list-item">
+              Structured distroless-style Docker images for production and
+              development, improving runtime security and reducing local
+              resource consumption.
+            </li>
+            <li class="cv__list-item">
+              Implemented OpenTelemetry-based telemetry pipelines with Coralogix
+              for production monitoring and incident analysis.
+            </li>
+            <li class="cv__list-item">
+              Worked across the full stack delivering features in React, Next.js,
+              and Remix on the front end and Django/Python and Go on the back
+              end, owning the complete request lifecycle from API design to UI
+              implementation.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Front-End Developer</h3>
+          <p class="cv__job-meta">
+            Hyperspace | Software Development Company | February 2020 – May 2021
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Developed and maintained a Vue.js platform for financial document
+              issuance, process management, and operational workflows — the core
+              system later carried into VERT Capital post-acquisition.
+            </li>
+            <li class="cv__list-item">
+              Led front-end continuity through the Hyperspace acquisition by
+              VERT Capital, standardizing Vue.js development practices and
+              ensuring zero regression on the core operational platform during
+              organizational integration.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Full-stack Developer</h3>
+          <p class="cv__job-meta">
+            Ivory IT | Software Development Company | August 2018 – December
+            2019
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Led front-end development of a vehicle flow management system for
+              VLI Logistics (SIOP) using React and Redux, introducing the stack
+              to the team with ongoing mentorship and training.
+            </li>
+            <li class="cv__list-item">
+              Delivered back-end features for multinational clients including
+              CNI and SESI, and integrated GraphQL APIs on the front-end across
+              multiple concurrent projects.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Web Developer Intern</h3>
+          <p class="cv__job-meta">
+            Nerit | Political and Aesthetic Clinic Management Solutions |
+            September 2017 – April 2018
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Maintained and extended a CMS in PHP/CodeIgniter and Java
+              (Spring), covering bug fixes, feature development, and system
+              optimization.
+            </li>
+            <li class="cv__list-item">
+              Supported migration from monolith to web services architecture and
+              contributed to a new React project, working full-stack across the
+              stack.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Web Developer Intern</h3>
+          <p class="cv__job-meta">
+            Primore Agency | Digital Marketing and Website Development Agency |
+            June 2015 – June 2017
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Built and maintained on-demand websites for marketing and
+              institutional clients using Ruby on Rails, MySQL, and jQuery.
+            </li>
+            <li class="cv__list-item">
+              Owned QA, deployment, and post-release support for client websites
+              across a portfolio of marketing and institutional projects, reducing
+              release issues through structured testing before each delivery.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Education</h2>
+        <ul class="cv__list">
+          <li class="cv__list-item">
+            Bachelor's Degree in Information Systems, FUMEC University, 2021
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="fab">
+      <a
+        class="fab__action"
+        href="files/CV.pdf"
+        download="Diego_Rodrigues_Marques_CV.pdf"
+        aria-label="Download CV in English"
+      >
+        <svg
+          class="fab__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span class="fab__label">Download EN</span>
+      </a>
+      <a
+        class="fab__action"
+        href="files/CV_PT.pdf"
+        download="Diego_Rodrigues_Marques_CV_PT.pdf"
+        aria-label="Download CV em Português"
+      >
+        <svg
+          class="fab__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span class="fab__label">Download PT</span>
+      </a>
+      <button
+        class="fab__action"
+        onclick="window.print()"
+        aria-label="Print CV"
+      >
+        <svg
+          class="fab__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <polyline points="6 9 6 2 18 2 18 9" />
+          <path
+            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+          />
+          <rect x="6" y="14" width="12" height="8" />
+        </svg>
+        <span class="fab__label">Print</span>
+      </button>
+    </div>
+  </body>
 </html>
