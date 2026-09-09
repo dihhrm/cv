@@ -105,53 +105,43 @@
         <div class="cv__job">
           <h3 class="cv__job-title">Engenheiro de Software Sênior</h3>
           <p class="cv__job-meta">
-            Musa | Empresa de Tecnologia para Gestão de Resíduos | Julho 2026 –
-            Atual
+            Musa | Empresa de Tecnologia para Gestão de Resíduos | Julho de 2026
+            até o momento
           </p>
           <ul class="cv__list">
             <li class="cv__list-item">
-              Criei do zero e levei à produção um novo serviço de contestação
-              (Django 5.2 / DRF / PostgreSQL) que substituiu um processo de
-              e-mail e WhatsApp por um fluxo auditável, aplicando as correções
-              aprovadas de forma assíncrona nos serviços de operação e
-              faturamento via outbox com SNS.
+              Desenvolvi e coloquei em produção um serviço de contestação com
+              Python, Django REST Framework e PostgreSQL, substituindo tratativas
+              por email e WhatsApp por um fluxo auditável. Integrei operações e
+              faturamento com SNS, SQS e padrão outbox para aplicar correções
+              aprovadas e prevenir cobranças duplicadas.
             </li>
             <li class="cv__list-item">
-              Fui responsável de ponta a ponta pela liberação do ciclo de
-              faturamento em cinco serviços — integração de faturamento em
-              FastAPI, gateways GraphQL em NestJS/Apollo e uma SPA React —
-              cobrindo janelas de retenção configuráveis em dias úteis,
-              bloqueio automático de ciclo e aprovação manual de medição.
+              Entreguei de ponta a ponta a funcionalidade de liberação do ciclo
+              de faturamento, integrando cinco serviços com FastAPI, NestJS,
+              Apollo GraphQL e React, com regras configuráveis de retenção,
+              bloqueio automático e aprovação de medições.
             </li>
             <li class="cv__list-item">
-              Construí a espinha dorsal orientada a eventos que conecta os
-              serviços, com consumers SQS e um worker de outbox agendado, de
-              modo que uma contestação aceita reprecifica a coleta e fecha a
-              fatura pelo valor decidido sem cobrança em duplicidade.
+              Provisionei ambientes de desenvolvimento, staging e produção no
+              Amazon ECS com AWS Fargate, usando Terraform e Terragrunt, incluindo
+              monitoramento com Sentry e verificações de saúde dos serviços.
             </li>
             <li class="cv__list-item">
-              Provisionei os ambientes de desenvolvimento, staging e produção
-              com Terraform/Terragrunt na AWS ECS Fargate — serviços, tarefas
-              agendadas no EventBridge, roles IAM e CORS no S3 para upload com
-              URL assinada — instrumentados com Sentry e com sondas de liveness
-              e readiness separadas.
+              Implementei validação obrigatória de testes em pull requests e
+              corrigi a geração de relatórios na biblioteca compartilhada de
+              GitHub Actions utilizada por todos os serviços da empresa.
             </li>
             <li class="cv__list-item">
-              Introduzi um gate de testes bloqueante em pull request e corrigi o
-              contrato de relatório JUnit na biblioteca compartilhada de GitHub
-              Actions usada por todos os serviços da Musa, elevando o padrão de
-              qualidade do CI em toda a organização.
+              Migrei a autenticação entre serviços para contas de serviço OAuth2
+              no Keycloak, corrigindo falhas de autorização associadas ao repasse
+              de tokens de usuários e reduzindo a exposição dessas credenciais.
             </li>
             <li class="cv__list-item">
-              Migrei as chamadas entre serviços de propagação de token de
-              usuário para service accounts OAuth2 no Keycloak em múltiplos
-              realms, eliminando uma classe de falhas de autorização e
-              reduzindo a exposição de credenciais entre serviços.
-            </li>
-            <li class="cv__list-item">
-              Escrevi a RFC e a especificação técnica do domínio de contestação
-              e contribuí para o pipeline interno de agentes de IA (distribuído
-              como MCP server) que transforma specs validadas em implementação.
+              Elaborei a RFC e a especificação técnica do domínio de contestação
+              e contribuí para um pipeline interno de agentes de IA,
+              disponibilizado via servidor MCP, para gerar implementações a
+              partir de especificações validadas.
             </li>
           </ul>
         </div>

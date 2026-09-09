@@ -104,53 +104,42 @@
         <div class="cv__job">
           <h3 class="cv__job-title">Senior Software Engineer</h3>
           <p class="cv__job-meta">
-            Musa | Waste Management Technology Company | July 2026 – Present
+            Musa | Waste Management Technology Company | July 2026 to Present
           </p>
           <ul class="cv__list">
             <li class="cv__list-item">
-              Bootstrapped and shipped to production a new dispute-resolution
-              service (Django 5.2 / DRF / PostgreSQL) that replaced an
-              email-and-WhatsApp process with an auditable workflow, applying
-              approved corrections asynchronously to the operations and billing
-              services through an SNS outbox pattern.
+              Developed and deployed a dispute resolution service using Python,
+              Django REST Framework, and PostgreSQL, replacing email and WhatsApp
+              exchanges with an auditable workflow. Integrated operations and
+              billing through SNS, SQS, and the outbox pattern to apply approved
+              corrections and prevent duplicate charges.
             </li>
             <li class="cv__list-item">
-              Owned the billing-cycle release feature end to end across five
-              services — FastAPI billing integration, NestJS/Apollo GraphQL
-              gateways, and a React SPA — covering configurable retention
-              windows in business days, automatic cycle holds, and manual
-              measurement approval.
+              Delivered the billing cycle release feature end to end, integrating
+              five services using FastAPI, NestJS, Apollo GraphQL, and React, with
+              configurable retention rules, automatic holds, and measurement
+              approval.
             </li>
             <li class="cv__list-item">
-              Built the event-driven backbone connecting the services with SQS
-              consumers and a scheduled outbox worker, so an accepted dispute
-              reprices the collection and closes the invoice at the decided
-              value without double-charging.
+              Provisioned development, staging, and production environments on
+              Amazon ECS with AWS Fargate using Terraform and Terragrunt,
+              including Sentry monitoring and service health checks.
             </li>
             <li class="cv__list-item">
-              Provisioned dev, staging, and production environments with
-              Terraform/Terragrunt on AWS ECS Fargate — services, EventBridge
-              scheduled tasks, IAM roles, and S3 CORS for presigned uploads —
-              and instrumented them with Sentry and split liveness/readiness
-              probes.
+              Implemented mandatory test validation for pull requests and fixed
+              report generation in the shared GitHub Actions library used by all
+              company services.
             </li>
             <li class="cv__list-item">
-              Introduced a blocking test gate on pull requests and fixed the
-              JUnit report contract in the shared GitHub Actions library used by
-              every Musa service, raising the CI quality bar across the
-              organization.
+              Migrated authentication between services to OAuth2 service accounts
+              in Keycloak, resolving authorization failures caused by forwarding
+              user tokens and reducing exposure of those credentials.
             </li>
             <li class="cv__list-item">
-              Migrated cross-service calls from propagated user tokens to
-              Keycloak OAuth2 service accounts across multiple realms,
-              eliminating a class of authorization failures and reducing
-              credential exposure between services.
-            </li>
-            <li class="cv__list-item">
-              Authored the RFC and technical specification for the dispute
-              domain and contributed to the internal AI agent pipeline
-              (distributed as an MCP server) that turns validated specs into
-              implementation.
+              Authored the RFC and technical specification for the dispute domain
+              and contributed to an internal AI agent pipeline, exposed through
+              an MCP server, to generate implementations from validated
+              specifications.
             </li>
           </ul>
         </div>
