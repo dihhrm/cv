@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diego Rodrigues Marques | Currículo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="cv">
+      <header class="cv__header">
+        <h1 class="cv__name">Diego Rodrigues Marques</h1>
+        <div class="cv__contact">
+          <span class="cv__contact-item"
+            >Brasileiro, Florianópolis - Santa Catarina - Brasil</span
+          >
+          <span class="cv__contact-item"
+            >E-mail:
+            <a href="mailto:diegobattistella94@gmail.com"
+              >diegobattistella94@gmail.com</a
+            ></span
+          >
+          <span class="cv__contact-item"
+            >LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/diego-rodrigues-9b99228a"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://www.linkedin.com/in/diego-rodrigues-9b99228a</a
+            ></span
+          >
+          <span class="cv__contact-item"
+            >GitHub:
+            <a
+              href="https://github.com/dihhrm"
+              target="_blank"
+              rel="noopener noreferrer"
+              >https://github.com/dihhrm</a
+            ></span
+          >
+        </div>
+      </header>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Resumo Profissional</h2>
+        <p class="cv__paragraph">
+          Engenheiro full-stack com mais de 11 anos entregando sistemas em
+          produção nos setores de serviços financeiros e tecnologia para gestão
+          de resíduos, com atuação direta em arquitetura de serviços
+          distribuídos, integrações orientadas a eventos, infraestrutura como
+          código, hardening de segurança e observabilidade em stacks React,
+          Vue.js, TypeScript, Django/FastAPI, NestJS e Rails. Atualmente
+          liderando iniciativas técnicas em times multidisciplinares.
+        </p>
+      </section>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Competências Técnicas</h2>
+        <dl class="cv__skills">
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Linguagens</dt>
+            <dd class="cv__skills-def">
+              Ruby, Python, JavaScript, TypeScript, Golang, Java, HTML, CSS
+            </dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Frameworks</dt>
+            <dd class="cv__skills-def">
+              Vue.js, React, Next.js, Remix, Django, Django REST Framework,
+              FastAPI, NestJS, Rails, Spring
+            </dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Bancos de dados</dt>
+            <dd class="cv__skills-def">PostgreSQL, MySQL, MongoDB</dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Ferramentas</dt>
+            <dd class="cv__skills-def">
+              Docker, Git, Terraform/Terragrunt, AWS (ECS Fargate, SNS, SQS,
+              EventBridge, EC2, S3), GitHub Actions, Redis, Kafka, Keycloak
+              (OAuth2/OIDC), Apereo CAS, GraphQL (Apollo), Redux, TanStack
+              Query, Storybook, Cypress, OpenTelemetry (Coralogix), Sentry
+            </dd>
+          </div>
+          <div class="cv__skills-row">
+            <dt class="cv__skills-term">Idiomas</dt>
+            <dd class="cv__skills-def">
+              Inglês — B2 Intermediário Superior &nbsp;·&nbsp; Português —
+              Nativo
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Experiência Profissional</h2>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Engenheiro de Software Sênior</h3>
+          <p class="cv__job-meta">
+            Musa | Empresa de Tecnologia para Gestão de Resíduos | Julho 2026 –
+            Atual
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Criei do zero e levei à produção um novo serviço de contestação
+              (Django 5.2 / DRF / PostgreSQL) que substituiu um processo de
+              e-mail e WhatsApp por um fluxo auditável, aplicando as correções
+              aprovadas de forma assíncrona nos serviços de operação e
+              faturamento via outbox com SNS.
+            </li>
+            <li class="cv__list-item">
+              Fui responsável de ponta a ponta pela liberação do ciclo de
+              faturamento em cinco serviços — integração de faturamento em
+              FastAPI, gateways GraphQL em NestJS/Apollo e uma SPA React —
+              cobrindo janelas de retenção configuráveis em dias úteis,
+              bloqueio automático de ciclo e aprovação manual de medição.
+            </li>
+            <li class="cv__list-item">
+              Construí a espinha dorsal orientada a eventos que conecta os
+              serviços, com consumers SQS e um worker de outbox agendado, de
+              modo que uma contestação aceita reprecifica a coleta e fecha a
+              fatura pelo valor decidido sem cobrança em duplicidade.
+            </li>
+            <li class="cv__list-item">
+              Provisionei os ambientes de desenvolvimento, staging e produção
+              com Terraform/Terragrunt na AWS ECS Fargate — serviços, tarefas
+              agendadas no EventBridge, roles IAM e CORS no S3 para upload com
+              URL assinada — instrumentados com Sentry e com sondas de liveness
+              e readiness separadas.
+            </li>
+            <li class="cv__list-item">
+              Introduzi um gate de testes bloqueante em pull request e corrigi o
+              contrato de relatório JUnit na biblioteca compartilhada de GitHub
+              Actions usada por todos os serviços da Musa, elevando o padrão de
+              qualidade do CI em toda a organização.
+            </li>
+            <li class="cv__list-item">
+              Migrei as chamadas entre serviços de propagação de token de
+              usuário para service accounts OAuth2 no Keycloak em múltiplos
+              realms, eliminando uma classe de falhas de autorização e
+              reduzindo a exposição de credenciais entre serviços.
+            </li>
+            <li class="cv__list-item">
+              Escrevi a RFC e a especificação técnica do domínio de contestação
+              e contribuí para o pipeline interno de agentes de IA (distribuído
+              como MCP server) que transforma specs validadas em implementação.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Desenvolvedor Full-Stack</h3>
+          <p class="cv__job-meta">
+            VERT Capital | Empresa de Serviços Financeiros | Maio 2021 – Maio
+            2026
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Liderei a migração de uma aplicação monolítica Django/Vue.js para
+              uma SPA Vue.js independente, reduzindo o tempo de deploy em mais
+              de 40% e melhorando a manutenibilidade.
+            </li>
+            <li class="cv__list-item">
+              Reforcei a autenticação migrando de tokens acessíveis pelo
+              navegador para sessões em cookies HttpOnly com integração SSO via
+              CAS, reduzindo a exposição de tokens no client.
+            </li>
+            <li class="cv__list-item">
+              Construí um Design System com Storybook em parceria com UX,
+              aumentando o reuso de componentes e agilizando o fluxo de design
+              para desenvolvimento.
+            </li>
+            <li class="cv__list-item">
+              Estruturei imagens Docker no estilo distroless para produção e
+              desenvolvimento, melhorando a segurança em runtime e reduzindo o
+              consumo de recursos locais.
+            </li>
+            <li class="cv__list-item">
+              Implementei pipelines de telemetria com OpenTelemetry e Coralogix
+              para monitoramento em produção e análise de incidentes.
+            </li>
+            <li class="cv__list-item">
+              Atuei em toda a stack entregando features em React, Next.js e
+              Remix no front-end e Django/Python e Go no back-end, sendo
+              responsável pelo ciclo completo da requisição, do design da API à
+              implementação da interface.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Desenvolvedor Front-End</h3>
+          <p class="cv__job-meta">
+            Hyperspace | Empresa de Desenvolvimento de Software | Fevereiro 2020
+            – Maio 2021
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Desenvolvi e mantive uma plataforma Vue.js para emissão de
+              documentos financeiros, gestão de processos e fluxos operacionais
+              — o sistema central posteriormente incorporado à VERT Capital
+              após a aquisição.
+            </li>
+            <li class="cv__list-item">
+              Conduzi a continuidade do front-end durante a aquisição da
+              Hyperspace pela VERT Capital, padronizando as práticas de
+              desenvolvimento em Vue.js e garantindo zero regressão na
+              plataforma operacional central durante a integração
+              organizacional.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Desenvolvedor Full-Stack</h3>
+          <p class="cv__job-meta">
+            Ivory IT | Empresa de Desenvolvimento de Software | Agosto 2018 –
+            Dezembro 2019
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Liderei o desenvolvimento front-end de um sistema de gestão de
+              fluxo de veículos para a VLI Logística (SIOP) usando React e
+              Redux, introduzindo a stack no time com mentoria e treinamento
+              contínuos.
+            </li>
+            <li class="cv__list-item">
+              Entreguei features de back-end para clientes multinacionais como
+              CNI e SESI, e integrei APIs GraphQL no front-end em múltiplos
+              projetos simultâneos.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Estagiário de Desenvolvimento Web</h3>
+          <p class="cv__job-meta">
+            Nerit | Soluções de Gestão para Clínicas Políticas e Estéticas |
+            Setembro 2017 – Abril 2018
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Mantive e estendi um CMS em PHP/CodeIgniter e Java (Spring),
+              cobrindo correção de bugs, desenvolvimento de features e
+              otimização do sistema.
+            </li>
+            <li class="cv__list-item">
+              Apoiei a migração de monolito para arquitetura de web services e
+              contribuí em um novo projeto React, atuando em toda a stack.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
+          <h3 class="cv__job-title">Estagiário de Desenvolvimento Web</h3>
+          <p class="cv__job-meta">
+            Primore Agency | Agência de Marketing Digital e Desenvolvimento de
+            Sites | Junho 2015 – Junho 2017
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Construí e mantive sites sob demanda para clientes de marketing e
+              institucionais usando Ruby on Rails, MySQL e jQuery.
+            </li>
+            <li class="cv__list-item">
+              Fui responsável por QA, deploy e suporte pós-release dos sites em
+              um portfólio de projetos de marketing e institucionais, reduzindo
+              problemas de release com testes estruturados antes de cada
+              entrega.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <hr class="cv__divider" />
+
+      <section class="cv__section">
+        <h2 class="cv__section-title">Formação</h2>
+        <ul class="cv__list">
+          <li class="cv__list-item">
+            Bacharelado em Sistemas de Informação, Universidade FUMEC, 2021
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="fab">
+      <a
+        class="fab__action"
+        href="files/CV.pdf"
+        download="Diego_Rodrigues_Marques_CV.pdf"
+        aria-label="Download CV in English"
+      >
+        <svg
+          class="fab__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span class="fab__label">Download EN</span>
+      </a>
+      <a
+        class="fab__action"
+        href="files/CV_PT.pdf"
+        download="Diego_Rodrigues_Marques_CV_PT.pdf"
+        aria-label="Download CV em Português"
+      >
+        <svg
+          class="fab__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span class="fab__label">Download PT</span>
+      </a>
+      <button
+        class="fab__action"
+        onclick="window.print()"
+        aria-label="Imprimir currículo"
+      >
+        <svg
+          class="fab__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <polyline points="6 9 6 2 18 2 18 9" />
+          <path
+            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+          />
+          <rect x="6" y="14" width="12" height="8" />
+        </svg>
+        <span class="fab__label">Imprimir</span>
+      </button>
+    </div>
+  </body>
+</html>

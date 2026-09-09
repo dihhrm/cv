@@ -46,10 +46,12 @@
       <section class="cv__section">
         <h2 class="cv__section-title">Professional Summary</h2>
         <p class="cv__paragraph">
-          Full-stack engineer with 10+ years delivering production systems in
-          financial services, with hands-on ownership of architecture migrations,
-          security hardening, and observability across React, Vue.js, TypeScript,
-          Rails, and Python stacks. Increasingly leading technical initiatives
+          Full-stack engineer with 11+ years delivering production systems in
+          financial services and waste-management technology, with hands-on
+          ownership of distributed service architecture, event-driven
+          integrations, infrastructure-as-code, security hardening, and
+          observability across React, Vue.js, TypeScript, Django/FastAPI,
+          NestJS, and Rails stacks. Currently leading technical initiatives
           across cross-functional teams.
         </p>
       </section>
@@ -68,7 +70,8 @@
           <div class="cv__skills-row">
             <dt class="cv__skills-term">Frameworks</dt>
             <dd class="cv__skills-def">
-              Vue.js, React, Next.js, Remix, Django, Rails, Spring
+              Vue.js, React, Next.js, Remix, Django, Django REST Framework,
+              FastAPI, NestJS, Rails, Spring
             </dd>
           </div>
           <div class="cv__skills-row">
@@ -78,8 +81,10 @@
           <div class="cv__skills-row">
             <dt class="cv__skills-term">Tools</dt>
             <dd class="cv__skills-def">
-              Docker, Git, Redis, AWS (EC2, S3), Cypress, Kafka, OpenTelemetry
-              (Coralogix), Apereo CAS, GraphQL, Redux, Storybook
+              Docker, Git, Terraform/Terragrunt, AWS (ECS Fargate, SNS, SQS,
+              EventBridge, EC2, S3), GitHub Actions, Redis, Kafka, Keycloak
+              (OAuth2/OIDC), Apereo CAS, GraphQL (Apollo), Redux, TanStack
+              Query, Storybook, Cypress, OpenTelemetry (Coralogix), Sentry
             </dd>
           </div>
           <div class="cv__skills-row">
@@ -97,9 +102,63 @@
         <h2 class="cv__section-title">Professional Experience</h2>
 
         <div class="cv__job">
+          <h3 class="cv__job-title">Senior Software Engineer</h3>
+          <p class="cv__job-meta">
+            Musa | Waste Management Technology Company | July 2026 – Present
+          </p>
+          <ul class="cv__list">
+            <li class="cv__list-item">
+              Bootstrapped and shipped to production a new dispute-resolution
+              service (Django 5.2 / DRF / PostgreSQL) that replaced an
+              email-and-WhatsApp process with an auditable workflow, applying
+              approved corrections asynchronously to the operations and billing
+              services through an SNS outbox pattern.
+            </li>
+            <li class="cv__list-item">
+              Owned the billing-cycle release feature end to end across five
+              services — FastAPI billing integration, NestJS/Apollo GraphQL
+              gateways, and a React SPA — covering configurable retention
+              windows in business days, automatic cycle holds, and manual
+              measurement approval.
+            </li>
+            <li class="cv__list-item">
+              Built the event-driven backbone connecting the services with SQS
+              consumers and a scheduled outbox worker, so an accepted dispute
+              reprices the collection and closes the invoice at the decided
+              value without double-charging.
+            </li>
+            <li class="cv__list-item">
+              Provisioned dev, staging, and production environments with
+              Terraform/Terragrunt on AWS ECS Fargate — services, EventBridge
+              scheduled tasks, IAM roles, and S3 CORS for presigned uploads —
+              and instrumented them with Sentry and split liveness/readiness
+              probes.
+            </li>
+            <li class="cv__list-item">
+              Introduced a blocking test gate on pull requests and fixed the
+              JUnit report contract in the shared GitHub Actions library used by
+              every Musa service, raising the CI quality bar across the
+              organization.
+            </li>
+            <li class="cv__list-item">
+              Migrated cross-service calls from propagated user tokens to
+              Keycloak OAuth2 service accounts across multiple realms,
+              eliminating a class of authorization failures and reducing
+              credential exposure between services.
+            </li>
+            <li class="cv__list-item">
+              Authored the RFC and technical specification for the dispute
+              domain and contributed to the internal AI agent pipeline
+              (distributed as an MCP server) that turns validated specs into
+              implementation.
+            </li>
+          </ul>
+        </div>
+
+        <div class="cv__job">
           <h3 class="cv__job-title">Full-Stack Developer</h3>
           <p class="cv__job-meta">
-            VERT Capital | Financial Services Company | May 2021 – Present
+            VERT Capital | Financial Services Company | May 2021 – May 2026
           </p>
           <ul class="cv__list">
             <li class="cv__list-item">

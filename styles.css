@@ -212,6 +212,10 @@ body {
 }
 
 @media print {
+  @page {
+    margin: 14mm 16mm;
+  }
+
   body {
     background-color: transparent;
     font-size: 10pt;
@@ -231,5 +235,14 @@ body {
   .cv__contact-item a {
     color: var(--color-text);
     text-decoration: none;
+  }
+
+  .cv__job,
+  .cv__skills-row {
+    break-inside: avoid;
+  }
+
+  .cv__section-title {
+    break-after: avoid;
   }
 }
