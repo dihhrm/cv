@@ -237,12 +237,22 @@ body {
     text-decoration: none;
   }
 
-  .cv__job,
+  /* Allow long jobs to continue on the next page without leaving large gaps. */
   .cv__skills-row {
     break-inside: avoid;
   }
 
-  .cv__section-title {
+  :lang(pt-BR) .cv__skills-row {
+    grid-template-columns: 8rem 1fr;
+  }
+
+  .cv__section-title,
+  .cv__job-title,
+  .cv__job-meta {
     break-after: avoid;
+  }
+
+  .cv__list-item {
+    break-inside: avoid;
   }
 }
